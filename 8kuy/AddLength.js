@@ -9,3 +9,9 @@ function addLength(str) {
   }
   return newArr;
 }
+
+// Short version
+
+function addLength(str) {
+  return str.split(" ").map((word) => `${word} ${word.length}`);
+}
